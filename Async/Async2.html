@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="startBtn">Start Interval</button>
+    <button id="stopBtn" disabled>Stop Interval</button>
+  
+    <script>
+     let intervalId;
+
+     document.getElementById('startBtn').addEventListener('click', startInterval);
+     document.querySelector('#stopBtn').addEventListener('click', stopInterval);
+     function startInterval(){
+        intervalId = setInterval(()=>{
+            console.log("Interval Running..")
+        }, 2000);
+    document.querySelector('#startBtn').disabled = true;
+    document.querySelector('#stopBtn').disabled = false;
+     }
+
+     function stopInterval(){
+        clearInterval(intervalId);
+    
+        document.querySelector('#startBtn').disabled = false;
+        document.querySelector('#stopBtn').disabled = true;
+
+     }
+    </script>
+  </body>
+</html>

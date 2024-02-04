@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <h1>Images</h1>
+    <div>
+        <ul>
+        <li><img id="nature" src="https://source.unsplash.com/500x500/?nature" alt="NatureImg"></li>
+        <li><img id="flowers" src="https://source.unsplash.com/500x500/?flowers" alt="NatureImg"></li>
+        <li><img id="mountains" src="https://source.unsplash.com/500x500/?mountains" alt="NatureImg"></li>
+        <li><img id="river" src="https://source.unsplash.com/500x500/?river" alt="NatureImg"></li>
+        <li><img id="forest" src="https://source.unsplash.com/500x500/?forest" alt="NatureImg"></li>
+        </ul>
+        <a style="color: black;" id="google" href="https://google.com"></a>
+    </div>
+</body>
+<script>
+    // document.getElementById('river').onclick = function(){
+    //     alert("River")
+    // }
+    document.getElementById('river').addEventListner('click', function(e){
+        console.log(e)
+    })
+    //type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget
+    //clientX, clientY, screenX, screenY
+    //altKey, ctrlKey, shiftKey, keyCode
+    
+</script>
+</html>

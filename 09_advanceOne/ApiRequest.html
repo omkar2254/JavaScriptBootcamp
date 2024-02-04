@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learn about XMLHttpRequests</h1>
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/omkar2254';
+    const Request = new XMLHttpRequest();
+    Request.open('GET', requestUrl);
+    Request.onreadystatechange = function(){
+        console.log(Request.readyState);
+        if(Request === 4){
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    }
+    Request.send();
+</script>
+</html>
