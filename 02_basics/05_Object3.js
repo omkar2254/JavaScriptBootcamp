@@ -7,10 +7,21 @@ const course = {
 }
 
 const {courseName} = course
-console.log(courseName)
+// console.log(courseName)
 
 const {courseInstructor: Instructor} = course
-console.log(Instructor)
+// console.log(Instructor)
+
+const person = {
+    name: "Omkar",
+    age: 22,
+    designation: "Frontend Developer"
+}
+
+const {name, age, designation} = person;
+console.log(name)
+console.log(age)
+console.log(designation)
 
 //---------------JSON-------------------//
 // {

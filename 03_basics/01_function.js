@@ -33,6 +33,8 @@ function logInUserMessage(username = "sam"){
     return `${username} is logged in`
 }
 const message = logInUserMessage()
+console.log(message)
+
 
 
 

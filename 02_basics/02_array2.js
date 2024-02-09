@@ -8,6 +8,7 @@ const dc = ["superman", "flash", "batman"]
 // let allHeros = marvel.concat(dc); 
 // console.log(allHeros);
 
+//Spread operator
 // let allNewHeros = [...marvel,...dc]
 // console.log(allNewHeros)
 
@@ -18,9 +19,9 @@ const dc = ["superman", "flash", "batman"]
 
 
 //data_scraping
-console.log(Array.isArray("Hitesh"))
-console.log(Array.from("Hitesh"))
-console.log(Array.from({name: "Omkar"})) //intresting
+// console.log(Array.isArray("Hitesh"))
+// console.log(Array.from("Hitesh"))
+// console.log(Array.from({name: "Omkar"})) //intresting
 
 let a = 20
 let b = 30

@@ -1,5 +1,10 @@
 const instagramUser = {}
 const metaUser = new Object() //this is also an object
+const faceBookUser = new Object();
+
+faceBookUser.id = "omii"
+faceBookUser.name = "Omkae"
+faceBookUser.isLoggedIn = true
 
 instagramUser.id = "im_omii"
 instagramUser.name = "Om"
@@ -22,7 +27,7 @@ const obj2 = {3: "c", 4: "d"}
 //const obj3 = Object.assign({}, obj1, obj2)
 
 const obj3 = {...obj1, ...obj2} //spread operator
-//console.log(obj3)
+// console.log(obj3)
 
 //----------objects inside array--------------//
 const users = [
@@ -38,6 +43,8 @@ const users = [
 ]
 
 console.log(Object.keys(instagramUser)); //we get all the keys in array format so we can perform all the operations on it
+
+console.log(Object.keys(faceBookUser));
 
 //console.log(Object.values(instagramUser));
 //console.log(Object.entries(instagramUser));

@@ -8,7 +8,7 @@ if(true){
     console.log(a) //it will print 10
 }
 
-console.log(a) //it will print 10
+console.log("a: ", a) //it will print 300
 // console.log(b)
 console.log(c)  //var is a global scope
 
@@ -43,7 +43,7 @@ if(true){
 
 //console.log(username)  //--produce error
 
-//-------------------------Intresting Mini Hoisting--------------------------------------//
+//-------------------------Intresting Hoisting--------------------------------//
 console.log(addOne(5))
 function addOne(num){
     return num + 1;

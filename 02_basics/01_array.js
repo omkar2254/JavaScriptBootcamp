@@ -28,12 +28,12 @@ const myArr = [1 , 2, 4, 5, 6, 7]
 //console.log(typeof newArr)
 
 //------------------------slice, splice--------------------------//
-console.log("Original Array: ", myArr);
+// console.log("Original Array: ", myArr);
 
-const myn1 = myArr.slice(1, 3);
-console.log("Using slice: ", myn1)
-console.log("After slicing operation: ", myArr)
+// const myn1 = myArr.slice(1, 3);
+// console.log("Using slice: ", myn1)
+// console.log("After slicing operation: ", myArr)
 
-const myn2 = myArr.splice(1, 3);
-console.log("Using splice: ", myn2)
-console.log("After splicing operation: ", myArr)
+// const myn2 = myArr.splice(1, 3);
+// console.log("Using splice: ", myn2)
+// console.log("After splicing operation: ", myArr)

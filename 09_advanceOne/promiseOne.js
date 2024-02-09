@@ -64,6 +64,7 @@
 //---------------------------------------------------------//
 //for passing data from server
 // new Promise(function(resolve, reject){
+//     console.log("Data successfully fetched");
 //     resolve({username: "Omkar", age: "22"})
 // })
 
@@ -99,12 +100,14 @@
 
 //With the help of async or await
 // const promiseSix = new Promise(function(resolve, reject){
-//     const serverData = false;
-//     if(serverData){
-//         resolve("Data successfully fetched");
-//     }else{
-//         reject("Error..");
-//     }
+//     const serverData = true;
+//     setTimeout(function(){
+//         if(serverData){
+//             resolve("Data successfully fetched");
+//         }else{
+//             reject("Error..");
+//         }
+//     }, 5000);
 // })
 
 // async function consumePromiseSix(){
@@ -141,28 +144,61 @@
 
 //--------------------------------------------------------//
 //Async & Await
-// async function getAllUsers(){
-//     try{
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users/')
-//         //console.log(response);
-//         const data = await response.json();
-//         console.log(data);
-//     }catch(error){
-//         console.log('E: ', error);
-//     }
+async function getAllUsers(){
+    try{
+        const response = await fetch('https://jsonplaceholder.typicode.com/users/')
+        //console.log(response);
+        const data = await response.json();
+        console.log(data);
+    }catch(error){
+        console.log('E: ', error);
+    }
     
-// }
-// getAllUsers();
+}
+getAllUsers();
 
 
 //With the help of then
-fetch('https://jsonplaceholder.typicode.com/users/')
-.then((response)=>{
-    return response.json();
-})
-.then((data)=>{
-    console.log(data);
-})
-.catch((error)=>{
-    console.log(error);
-})
+// fetch('https://jsonplaceholder.typicode.com/users/')
+// .then((response)=>{
+//     return response.json();
+// })
+// .then((data)=>{
+//     console.log(data);
+// })
+// .catch((error)=>{
+//     console.log(error);
+// })
+//----------------------------------------------------------//
+// const promisePractice = new Promise(function(resolve, reject){
+//     setTimeout(function(){
+//         console.log("Data fetched..");
+//         resolve();
+//     }, 4000)
+// })
+// promisePractice.then(function(){
+//     console.log("Operation complete");
+// })
+
+//---------------------------------------------------------//
+
+//check network is working fine
+
+// const performNetworkOperation = new Promise(function(resolve, reject){
+//     const sendRequest = true;
+//     if(sendRequest){
+//         resolve("Network is fine");
+//     }else{
+//         reject("Network does not respond")
+//     }
+// })
+// async function checkNetwork(){
+//     try{
+//         const check = await performNetworkOperation;
+//         console.log(check);
+//     }catch(error){
+//         console.log(error);
+//     }
+// }
+
+// checkNetwork();
